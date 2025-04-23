@@ -9,21 +9,24 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0            # fetch full history for gh-pages branch
+          persist-credentials: false # disable GITHUB_TOKEN so SSH key is used
 
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: "latest"
 
-    - name: Setup Hugo
-      uses: peaceiris/actions-hugo@v3
-      with:
-        hugo-version: "latest"
+      - name: Build site
+        run: hugo --minify
 
-    - name: Build site
-      run: hugo --minify
-
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v4
-      with:
-        deploy_key: ${{ secrets.DEPLOY_SSH_KEY}}   # see notes below
-        publish_branch: gh-pages
-        publish_dir: ./public
-        keep_history: true
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          deploy_key:    ${{ secrets.DEPLOY_SSH_KEY }}
+          publish_branch: gh-pages
+          publish_dir:    ./public
+          keep_history:   true
