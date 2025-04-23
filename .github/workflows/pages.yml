@@ -12,9 +12,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          submodules: false         # ← disable any submodule init/update
-          fetch-depth: 0            # ← grab full history (needed for gh-pages)
-          persist-credentials: false# ← let SSH key be used, not GITHUB_TOKEN
+          submodules: recursive
+          fetch-depth: 0
+          persist-credentials: false
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
