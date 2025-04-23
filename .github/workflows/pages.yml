@@ -12,8 +12,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0            # fetch full history for gh-pages branch
-          persist-credentials: false # disable GITHUB_TOKEN so SSH key is used
+          submodules: false         # ← disable any submodule init/update
+          fetch-depth: 0            # ← grab full history (needed for gh-pages)
+          persist-credentials: false# ← let SSH key be used, not GITHUB_TOKEN
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
@@ -26,7 +27,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
-          deploy_key:    ${{ secrets.DEPLOY_SSH_KEY }}
+          deploy_key:     ${{ secrets.DEPLOY_SSH_KEY }}
           publish_branch: gh-pages
           publish_dir:    ./public
           keep_history:   true
