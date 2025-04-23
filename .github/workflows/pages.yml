@@ -1,0 +1,30 @@
+name: Build & Deploy Hugo site to GitHub Pages
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        submodules: true
+
+    - name: Setup Hugo
+      uses: peaceiris/actions-hugo@v4
+      with:
+        hugo-version: "latest"
+
+    - name: Build site
+      run: hugo --minify
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        deploy_key: ${{ secrets.ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIN66u9b6At4NV3k403mB77DUOr8co1YpuPWAzson+/3p github-pages}}   # see notes below
+        publish_branch: gh-pages
+        publish_dir: ./public
+        keep_history: true
