@@ -1,0 +1,13 @@
+<footer class="footer">
+	<div class="container footer__container flex">
+	  {{ partial "footer_links.html" . }}
+	  <div class="footer__copyright">
+		&copy; {{ now.Format "2006" }} COSINE Lab. All rights reserved.
+		{{ with .Site.Params.footer.text }}
+		  <span>{{ . | markdownify }}</span>
+		{{ end }}
+	  </div>
+	  {{ partial "footer_right.html" . }}
+	</div>
+  </footer>
+  

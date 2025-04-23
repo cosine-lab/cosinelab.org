@@ -1,0 +1,104 @@
+<div class="widget widget-calendar">
+    <h3 class="widget-title">Calendar</h3>
+  
+    <div class="cal-nav">
+      <button id="cal-prev" aria-label="Previous Month">◀︎</button>
+      <span id="cal-month-year"></span>
+      <button id="cal-next" aria-label="Next Month">▶︎</button>
+    </div>
+  
+    <div id="mini-calendar"></div>
+  
+    <script>
+    (function() {
+      // 1) Build a map of "YYYY-MM-DD" → permalink for all news pages
+      const newsEvents = {
+        {{- range where .Site.RegularPages "Section" "news" }}
+          "{{ .Date.Format "2006-01-02" }}": "{{ .RelPermalink }}",
+        {{- end }}
+      };
+  
+      const monthNames = [
+        "January","February","March","April","May","June",
+        "July","August","September","October","November","December"
+      ];
+      const weekdays = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+      const today = new Date();
+      let currentYear  = today.getFullYear();
+      let currentMonth = today.getMonth();
+  
+      function renderCalendar(month, year) {
+        const firstDay        = new Date(year, month, 1).getDay();
+        const daysInMonth     = new Date(year, month + 1, 0).getDate();
+        const daysInPrevMonth = new Date(year, month, 0).getDate();
+  
+        // update header
+        document.getElementById("cal-month-year")
+                .textContent = `${monthNames[month]} ${year}`;
+  
+        // build grid
+        let html = '<div class="cal-grid">';
+        weekdays.forEach(d => html += `<div class="cal-header">${d}</div>`);
+  
+        let day = 1, nextDay = 1;
+        for (let i = 0; i < 42; i++) {
+          let cellDate, cellClass="";
+          if (i < firstDay) {
+            // previous month
+            const date = daysInPrevMonth - firstDay + 1 + i;
+            cellDate = new Date(year, month-1, date);
+            cellClass = "cal-other";
+          } else if (day > daysInMonth) {
+            // next month
+            cellDate = new Date(year, month+1, nextDay);
+            cellClass = "cal-other";
+            nextDay++;
+          } else {
+            // current month
+            cellDate = new Date(year, month, day);
+            if (day===today.getDate() && month===today.getMonth() && year===today.getFullYear()) {
+              cellClass = "cal-today";
+            }
+            day++;
+          }
+  
+          // format key
+          const y = cellDate.getFullYear();
+          const m = String(cellDate.getMonth()+1).padStart(2,"0");
+          const d = String(cellDate.getDate()).padStart(2,"0");
+          const key = `${y}-${m}-${d}`;
+  
+          // render cell: link if event, span otherwise
+          const label = cellDate.getDate();
+          if (newsEvents[key]) {
+            html += `<div class="cal-cell ${cellClass} cal-event">
+                       <a href="${newsEvents[key]}" title="View news for ${key}">${label}</a>
+                     </div>`;
+          } else {
+            html += `<div class="cal-cell ${cellClass}">${label}</div>`;
+          }
+        }
+        html += "</div>";
+  
+        document.getElementById("mini-calendar").innerHTML = html;
+      }
+  
+      document.getElementById("cal-prev")
+        .addEventListener("click", () => {
+          currentMonth--;
+          if (currentMonth < 0) { currentMonth = 11; currentYear--; }
+          renderCalendar(currentMonth, currentYear);
+        });
+  
+      document.getElementById("cal-next")
+        .addEventListener("click", () => {
+          currentMonth++;
+          if (currentMonth > 11) { currentMonth = 0; currentYear++; }
+          renderCalendar(currentMonth, currentYear);
+        });
+  
+      renderCalendar(currentMonth, currentYear);
+    })();
+    </script>
+  </div>
+  

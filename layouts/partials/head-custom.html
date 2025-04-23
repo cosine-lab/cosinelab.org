@@ -1,0 +1,16 @@
+{{- /* 1) Compile & fingerprint custom.css */ -}}
+{{ $css := resources.Get "css/custom.css" | minify | fingerprint }}
+<link
+  rel="stylesheet"
+  href="{{ $css.Permalink }}"
+  integrity="{{ $css.Data.Integrity }}"
+  media="all"
+/>
+
+{{- /* 2) Compile & fingerprint menu.js */ -}}
+{{ $js := resources.Get "js/menu.js" | minify | fingerprint }}
+<script
+  defer
+  src="{{ $js.Permalink }}"
+  integrity="{{ $js.Data.Integrity }}"
+></script>

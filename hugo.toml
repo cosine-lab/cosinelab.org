@@ -1,0 +1,122 @@
+baseURL = "https://cosinelab.org/"
+languageCode = "en-us"
+title = "Welcome to COSINE Lab"
+theme = "hugo-dpsg"
+enableRobotsTXT = true
+
+[params]
+  description = "COSINE Lab - COmplex Systems, Informatics, and Networked Engineering"
+  copyright   = "© COSINE LAB, All rights reserved."
+  opengraph   = true
+  schema      = true
+
+  # point at our static/css folder
+  customCSS = ["css/custom.css"]
+  customJS  = ["js/menu.js"]
+
+[Params.sidebar]
+  home         = "right"
+  list         = "right"
+  single       = false
+  widgets      = ["search", "recent", "calendar", "taglist", "social", "languages"]
+  twitter_cards = true
+  readmore     = false
+  authorbox    = true
+  toc          = true
+  pager        = true
+  indexPager   = true
+  post_meta    = ["author", "date", "calendar", "translations"]
+  mainSections = ["post", "blog", "news"]
+  dateformat   = "02.01.2006"
+  customCSS    = []
+  customJS     = []
+
+[Params.style.vars]
+  highlightColor = "#33363b"
+
+[Params.logo]
+  image    = "img/lablogoicon.png?width=800px"
+  header   = "img/header.png"
+  title    = "COSINE LAB"
+  subtitle = "COmplex Systems, Informatics, and Networked Engineering"
+
+[Params.widgets]
+  recent_num   = 5
+  tags_counter = true
+
+[Params.footer]
+  #right = "[](/)" # Right-aligned text in footer row, understands markdown
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url  = "/"
+    weight = 1
+
+  [[menu.main]]
+    name       = "About"
+    url        = "/about/"
+    weight     = 2
+    identifier = "about"
+
+  [[menu.main]]
+    name   = "Current Member"
+    url    = "/about/current_member/"
+    weight = 1
+    parent = "about"
+
+  [[menu.main]]
+    name   = "Alumni"
+    url    = "/about/alumni/"
+    weight = 2
+    parent = "about"
+
+  [[menu.main]]
+    name   = "Lab Photos"
+    url    = "/about/lab_photos/"
+    weight = 3
+    parent = "about"
+
+  [[menu.main]]
+    name       = "Research"
+    url        = "/research/"
+    weight     = 3
+    identifier = "research"
+
+  [[menu.main]]
+    name   = "Projects"
+    url    = "/research/projects/"
+    weight = 1
+    parent = "research"
+
+  [[menu.main]]
+    name   = "Grants"
+    url    = "/research/grants/"
+    weight = 2
+    parent = "research"
+
+  [[menu.main]]
+    name   = "Publications"
+    url    = "/publications/"
+    weight = 4
+
+  [[menu.main]]
+    name   = "Teaching"
+    url    = "/teaching/"
+    weight = 5
+
+  [[menu.main]]
+    name   = "Resources"
+    url    = "/resources/"
+    weight = 6
+
+  [[menu.main]]
+    name   = "News"
+    url    = "/news/"
+    weight = 7
+
+  [[menu.main]]
+    name   = "Contact"
+    url    = "/contact/"
+    weight = 8
+

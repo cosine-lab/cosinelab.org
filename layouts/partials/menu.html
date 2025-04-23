@@ -1,0 +1,62 @@
+{{- if .Site.Menus.main }}
+<nav class="menu">
+  <div class="container">
+    <button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+      <span class="menu__btn-title" tabindex="-1">{{ T "menu_label" }}</span>
+    </button>
+    <ul class="menu__list">
+      {{- $currentNode := . }}
+      {{- range .Site.Menus.main }}
+        <li class="menu__item{{ if .HasChildren }} menu__item--parent{{ end }}{{ if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }} menu__item--active{{ end }}">
+          <a class="menu__link" href="{{ .URL }}">
+            {{ .Pre }}
+            <span class="menu__text">{{ .Name }}</span>
+            {{ if .HasChildren }}<span class="menu__arrow">▼</span>{{ end }}
+            {{ .Post }}
+          </a>
+
+          {{- if .HasChildren }}
+            <ul class="menu__sublist">
+              {{- range .Children }}
+                <li class="menu__item">
+                  <a class="menu__link" href="{{ .URL }}">
+                    {{ .Pre }}
+                    <span class="menu__text">{{ .Name }}</span>
+                    {{ .Post }}
+                  </a>
+                </li>
+              {{- end }}
+            </ul>
+          {{- end }}
+
+        </li>
+      {{- end }}
+    </ul>
+  </div>
+</nav>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // On mobile (<768px) clicks toggle the "expanded" class:
+  document.querySelectorAll('.menu__item--parent > .menu__link').forEach(link => {
+    link.addEventListener('click', function(e) {
+      if (window.innerWidth <= 767) {
+        e.preventDefault();
+        this.closest('.menu__item--parent').classList.toggle('menu__item--expanded');
+      }
+    });
+  });
+
+  // Clicking outside closes any open submenu on mobile
+  document.addEventListener('click', function(e) {
+    if (window.innerWidth <= 767 && !e.target.closest('.menu__item--parent')) {
+      document.querySelectorAll('.menu__item--parent').forEach(item => {
+        item.classList.remove('menu__item--expanded');
+      });
+    }
+  });
+});
+</script>
+{{ else -}}
+<div class="divider"></div>
+{{- end }}
