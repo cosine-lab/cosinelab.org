@@ -191,6 +191,25 @@ nav.menu .menu__sublist .menu__link {
 
 /* Optionally give cal-event a background or underline */
 .widget-calendar .cal-cell.cal-event {
-  background-color: rgba(41, 77, 138, 0.1);
+  background-color: rgba(51,54,59,0.1);
   border-radius: 4px;
+}
+
+.logo__img {
+	max-height: 256px;
+	width: 287px;      /* Maintain aspect ratio */
+    height: 100px;    /* Set a fixed height or use max-height */
+}
+
+.logo__text {
+	text-transform: uppercase;
+}
+
+.logo--mixed .logo__item {
+	margin: .5rem auto;
+}
+
+.logo--mixed .logo__img {
+	max-width: 287px;
+	max-height: 287px;
 }
