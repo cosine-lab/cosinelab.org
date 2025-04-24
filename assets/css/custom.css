@@ -198,36 +198,24 @@ nav.menu .menu__sublist .menu__link {
 
 /* ─── Logo Tweaks ────────────────────────────────── */
 .logo__img {
-	max-height: 256px;
-	width: 287px;      /* Maintain aspect ratio */
+  max-height: 256px;
+  width: 287px;      /* Maintain aspect ratio */
   height: 100px;    /* Set a fixed height or use max-height */
 }
 
 .logo__text {
-	text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .logo--mixed .logo__item {
-	margin: .5rem auto;
+  margin: .5rem auto;
 }
 
 .logo--mixed .logo__img {
-	max-width: 287px;
-	max-height: 287px;
+  max-width: 287px;
+  max-height: 287px;
 }
 
 body {
-	color: #1a1a1a;
-	margin: 0;
-	font-family: {{ $fontFamilyPrimary }};
-	font-size: 14px;
-	font-size: .875rem;
-	line-height: 1.6;
-	word-wrap: break-word;
-	background: #dcdcdc; 
-	-webkit-font-smoothing: antialiased;
-	/* Stick footer to bottom */
-	display: flex;
-	flex-direction: column;
-	height: 100vh;
+  background: #dcdcdc;
 }
