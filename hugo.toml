@@ -71,11 +71,11 @@ enableRobotsTXT = true
     weight = 2
     parent = "about"
 
-  #[[menu.main]]
-  #  name   = "Lab Photos"
-  #  url    = "/about/lab_photos/"
-  #  weight = 3
-  #  parent = "about"
+  [[menu.main]]
+    name   = "Lab Photos"
+    url    = "/about/lab_photos/"
+    weight = 3
+    parent = "about"
 
   [[menu.main]]
     name       = "Research"
