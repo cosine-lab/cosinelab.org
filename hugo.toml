@@ -1,4 +1,4 @@
-baseURL = "https://cosinelab.org/"
+baseURL = "https://cosine-lab.github.io/cosinelab.org/"
 languageCode = "en-us"
 title = "Welcome to COSINE Lab"
 theme = "hugo-dpsg"
