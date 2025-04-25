@@ -230,7 +230,7 @@ background: #dcdcdc !important;
 .news-item {
   margin-bottom: 2rem;
   padding-bottom: 1.5rem;
-  border-bottom: 1px solid #eaeaea;
+  border-bottom: 1px solid #33363b;
 }
 
 .news-item h2 {
@@ -247,4 +247,24 @@ background: #dcdcdc !important;
   max-width: 100%;
   height: auto;
   margin-bottom: 1rem;
+}
+
+/* Contact section styles */
+/* Reduce space around headings */
+.contact-container h3 {
+  margin-bottom: 0.5rem !important;  /* Adjust as needed */
+}
+
+/* Style the divider line */
+hr, .divider {
+  height: 0.5px !important;                /* Thickness (adjust as needed) */
+  border: 0 !important;               /* Remove default border */
+  background-color: #33363b !important;  /* Your preferred color */
+  margin: 0.5rem 0 !important;           /* Reduce space around the line */
+}
+
+/* Tighten paragraph spacing */
+.contact-container p {
+  margin-top: 0.2rem !important;
+  margin-bottom: 0.5rem !important;
 }

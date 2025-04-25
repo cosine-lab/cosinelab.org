@@ -9,7 +9,7 @@ tags:
   - ""
 ---
 
-![My Research Figure](/cosinelab.org/img/Research_Overview.png)  
+![My Research Figure](/cosinelab.org/img/Research_Overview_V1.png)  
 
 
 For more information, please see COSINE Projects and COSINE Grants.
