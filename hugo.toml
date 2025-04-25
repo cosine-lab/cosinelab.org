@@ -17,7 +17,7 @@ enableRobotsTXT = true
 [Params.sidebar]
   home         = "right"
   list         = "right"
-  single       = false
+  single       = "right"
   widgets      = ["search", "recent", "calendar", "taglist", "social", "languages"]
   twitter_cards = true
   readmore     = false
