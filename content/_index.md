@@ -9,6 +9,7 @@ title: "Welcome to COSINE Lab"
 The **CO**mplex **S**ystems, **I**nformatics, and **N**etworked **E**ngineering Laboratory (COSINE Lab) conducts interdisciplinary research at the intersection of systems science, network science, and data-driven engineering design. Our work is centered on understanding and designing **complex socio-technical systems**, with a strong emphasis on **human-AI collaboration**, **human-system integration**, and **engineering for dynamic**, **interconnected environments**. 
 
 Research in the COSINE Lab spans a range of application domains, including transportation systems, product market systems, electric vehicle (EV) charging infrastructure, urban infrastructure, energy systems, and smart manufacturing. Key research themes include:
+- **Local-level network-based** bottom-up design of conplex systems
 - Engineering and design of complex systems with **temporal dynamics**
 - **AI-integrated** system design for adaptive and responsive solutions
 - **Multidimensional** network modeling across interdependent systems
