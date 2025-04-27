@@ -268,3 +268,76 @@ hr, .divider {
   margin-top: 0.2rem !important;
   margin-bottom: 0.5rem !important;
 }
+
+
+/* ─── Sidebar Tweaks ──────────────────────────────── */
+
+/* super-specific override for the News widget */
+.widget-news,
+.widget-news .widget-content,
+.widget-news .widget-inner {
+  /* ensure we’re allowed to scroll at all */
+  overflow: visible !important;
+}
+
+/* target our container inside that widget */
+.widget-news .news-container {
+  max-height: 200px !important;      /* make it shorter than its contents */
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  border: 1px solid #ccc !important;
+  padding: 0.5rem !important;
+  background: #dcdcdc !important;
+}
+
+/* each post separation */
+.widget-news .news-post {
+  padding-bottom: 0.3rem !important;
+  margin-bottom: 0.3rem !important;
+  border-bottom: 1px solid #ddd !important;
+}
+
+.widget-news .news-title {
+  font-size: 0.8rem !important;
+  margin: 0 0 0.25rem !important;
+}
+
+.widget-news .news-title a {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+
+/* 1) All sidebar widget titles to 1rem (16px) */
+.sidebar .widget h3 {
+  font-size: 1.25rem;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+/* Back-to-Top Button */
+#toTopBtn {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 1000;
+  background-color: #E76C57;
+  color: white;
+  border: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  display: none;           /* hidden by default */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  transition: opacity 0.01s;
+}
+
+#toTopBtn.show {
+  display: block;
+  opacity: 0.75;
+}
+
+#toTopBtn:hover {
+  opacity: 1;
+}

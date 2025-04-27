@@ -4,8 +4,8 @@
 	
 <link
   rel="stylesheet"
-  href="http://localhost:1313/cosinelab.org/css/custom.min.dbbae0af3fc63e9d2395f672a199efc78847c9de6a17feac7dbdd26712b70b6b.css"
-  integrity="sha256-27rgrz/GPp0jlfZyoZnvx4hHyd5qF/6sfb3SZxK3C2s="
+  href="http://localhost:1313/cosinelab.org/css/custom.min.f7f66f8dc6d4c5b50a065e09427f40ca8bcc22ae0a237b7a2d47f038b6454664.css"
+  integrity="sha256-9/ZvjcbUxbUKBl4JQn9AyovMIq4KI3t6LUfwOLZFRmQ="
   media="all"
 />
 <script
@@ -72,13 +72,6 @@
                   <a class="menu__link" href="/cosinelab.org/about/current_member/">
                     
                     <span class="menu__text">Current Member</span>
-                    
-                  </a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="/cosinelab.org/about/alumni/">
-                    
-                    <span class="menu__text">Alumni</span>
                     
                   </a>
                 </li>
@@ -220,15 +213,33 @@ document.addEventListener('DOMContentLoaded', function() {
 		<input class="widget-search__submit" type="submit" value="Search">
 		<input type="hidden" name="sitesearch" value="http://localhost:1313/cosinelab.org/" />
 	</form>
-</div>
-<div class="widget-recent widget">
-	<h4 class="widget__title">Recent Posts</h4>
-	<div class="widget__content">
-		<ul class="widget__list">
-			<li class="widget__item"><a class="widget__link" href="/cosinelab.org/news/2025-04-24-website-launch/">Website Officially Launched!</a></li>
-		</ul>
-	</div>
-</div>
+</div><div class="widget widget-news">
+    <h3>News</h3>
+    <div class="news-container" style="max-height:150px; overflow-y:auto; border:1px solid red;">
+      
+      
+  
+      
+        <div class="news-post">
+          <span class="news-date">[04/2025]</span>
+          <a href="http://localhost:1313/cosinelab.org/news/2025-04-24-website-launch/" class="news-link">Website Officially Launched!</a>
+        </div>
+      
+    </div>
+  </div>
+  <div class="widget widget-cfa">
+    <h3>Graduate Research Assistant</h3>
+    <p>
+        <strong>
+            <a href="/cosinelab.org/files/PhD_Recuit_Cosine_Lab_CSU.pdf" target="_blank" rel="noopener">
+                Call for Application:
+            </a>
+        </strong> 
+        One to two graduate assistant positions are available in COSINE Lab starting from Spring 2026 or Fall 2026. If you’re passionate about complex systems, network science, or data-driven design, we’d love to hear from you! To apply, please email Dr. Xiao at <a href="mailto:yinshuang.xiao@colostate.edu"><span style="color:#0055aa; text-decoration:underline">Yinshuang.Xiao@colostate.edu</span></a> with the subject line “GRA Application to Cosine Lab.” and include your CV, transcripts, and a brief summary of your research interests and experience. We’re excited to welcome new Cosiners to our team!
+    </p>
+
+        
+  </div>
 <div class="widget widget-calendar">
     <h3 class="widget-title">COSINE Calendar</h3>
   
@@ -330,6 +341,27 @@ document.addEventListener('DOMContentLoaded', function() {
     })();
     </script>
   </div>
+  <div class="widget widget-aboutdse">
+    <h3>About Dept of System Engineering</h3>
+    <p><a href="/about/department-system-engineering/">Learn more &rarr;</a></p>
+  </div>
+  <div class="widget widget-aboutcsu">
+    <h3>About CSU</h3>
+    <p><a href="/about/csu/">Our parent institution &rarr;</a></p>
+  </div>
+  <div class="widget widget-clustrmaps">
+    
+    <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=080808&w=a&t=tt&d=phDc7XByqnpm4JPzrac5fbTLMNHa6wLFEJBJn3ZCIEY&co=dcdcdc&ct=808080&cmo=3acc3a&cmn=ff5353"></script>
+  </div>
+
+  <div class="widget widget-contact">
+    <p>
+      Email: <a href="mailto:yinshuang.xiao@colostate.edu">yinshuang.xiao@colostate.edu</a><br>
+      <a href="https://www.google.com/maps/place/Academic+Village+Engineering/@40.5713477,-105.0937904,17z/data=!3m1!4b1!4m6!3m5!1s0x87694a4e19306b31:0x1fd2fb7517869f2f!8m2!3d40.5713477!4d-105.0912155!16s%2Fg%2F11cn74z65x?entry=ttu&g_ep=EgoyMDI1MDQyMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">
+        6029 Campus Delivery, Fort Collins, CO 80523-6029 
+      </a>
+    </p>
+  </div>
   
 
 </aside>
@@ -338,14 +370,37 @@ document.addEventListener('DOMContentLoaded', function() {
 	<div class="container footer__container flex">
 	  
 	  <div class="footer__copyright">
-		&copy; 2025 COSINE Lab. All rights reserved.
+		&copy; 2025 COSINE Lab. All rights reserved. Last updated Apr 2025.
 		
 	  </div>
 	  
 
+
 	</div>
   </footer>
   
+  
+  <button id="toTopBtn" title="Back to top">↑</button>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const toTopBtn = document.getElementById("toTopBtn");
+
+      
+      window.addEventListener("scroll", function() {
+        if (window.pageYOffset > 300) {
+          toTopBtn.style.display = "block";
+        } else {
+          toTopBtn.style.display = "none";
+        }
+      });
+
+      
+      toTopBtn.addEventListener("click", function() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    });
+  </script>
 	<script async defer src="/cosinelab.org/js/menu.js"></script>
 	
 	

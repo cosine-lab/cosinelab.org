@@ -2,7 +2,7 @@
 	<div class="container footer__container flex">
 	  {{ partial "footer_links.html" . }}
 	  <div class="footer__copyright">
-		&copy; {{ now.Format "2006" }} COSINE Lab. All rights reserved.
+		&copy; {{ now.Format "2006" }} COSINE Lab. All rights reserved. Last updated {{ now.Format "Jan 2006" }}.
 		{{ with .Site.Params.footer.text }}
 		  <span>{{ . | markdownify }}</span>
 		{{ end }}
@@ -11,3 +11,25 @@
 	</div>
   </footer>
   
+  <!-- Back to Top Button -->
+  <button id="toTopBtn" title="Back to top">↑</button>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const toTopBtn = document.getElementById("toTopBtn");
+
+      // show after scrolling down 300px
+      window.addEventListener("scroll", function() {
+        if (window.pageYOffset > 300) {
+          toTopBtn.style.display = "block";
+        } else {
+          toTopBtn.style.display = "none";
+        }
+      });
+
+      // scroll to top on click
+      toTopBtn.addEventListener("click", function() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    });
+  </script>

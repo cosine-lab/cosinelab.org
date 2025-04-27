@@ -12,4 +12,4 @@ tags:
 ![My Research Figure](/cosinelab.org/img/Research_Overview_V1.png)  
 
 
-For more information, please see COSINE Projects and COSINE Grants.
+For more information, please see [COSINE Projects](/cosinelab.org/research/projects/) and [COSINE Grants](/cosinelab.org/research/grants/).

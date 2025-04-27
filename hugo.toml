@@ -18,7 +18,19 @@ enableRobotsTXT = true
   home         = "right"
   list         = "right"
   single       = "right"
-  widgets      = ["search", "recent", "calendar", "taglist", "social", "languages"]
+  widgets      = [
+    "search", 
+    "news", 
+    "callforapplication",      # ← “Call for Application”
+    "calendar",
+    "aboutdse",                # ← “About Dept of System Engineering”
+    "aboutcsu",                # ← “About CSU”
+    "clustrmaps",              # ← “ClustrMaps”
+    "contact",
+    "taglist",
+    "social",
+    "languages"
+    ]
   twitter_cards = true
   readmore     = false
   authorbox    = true
@@ -65,16 +77,16 @@ enableRobotsTXT = true
     weight = 1
     parent = "about"
 
-  [[menu.main]]
-    name   = "Alumni"
-    url    = "/about/alumni/"
-    weight = 2
-    parent = "about"
+  #[[menu.main]]
+  #  name   = "Alumni"
+  #  url    = "/about/alumni/"
+  #  weight = 2
+  #  parent = "about"
 
   [[menu.main]]
     name   = "Lab Photos"
     url    = "/about/lab_photos/"
-    weight = 3
+    weight = 2
     parent = "about"
 
   [[menu.main]]
