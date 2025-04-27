@@ -1,6 +1,6 @@
 <div class="member-card">
     <div class="member-card-inner">
-      <img src="/cosinelab.org{{ .photo }}" alt="{{ .name }}" class="member-photo"/>
+      <img src="{{ .photo }}" alt="{{ .name }}" class="member-photo"/>
   
       <div class="member-info">
         <h4 class="member-name">{{ .name }}</h4>
@@ -23,17 +23,17 @@
   
         <p class="member-links">
           {{ with .links.website }}
-            <a href="/cosinelab.org{{ . }}" target="_blank" rel="noopener">
+            <a href="{{ . }}" target="_blank" rel="noopener">
               <i class="fas fa-globe"></i>
             </a>
           {{ end }}
           {{ with .links.linkedin }}
-            <a href="/cosinelab.org{{ . }}" target="_blank" rel="noopener">
+            <a href="{{ . }}" target="_blank" rel="noopener">
               <i class="fab fa-linkedin"></i>
             </a>
           {{ end }}
           {{ with .links.scholar }}
-            <a href="/cosinelab.org{{ . }}" target="_blank" rel="noopener">
+            <a href="{{ . }}" target="_blank" rel="noopener">
               <i class="fas fa-graduation-cap"></i>
             </a>
           {{ end }}
