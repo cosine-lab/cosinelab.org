@@ -1,0 +1,44 @@
+<div class="member-card">
+    <div class="member-card-inner">
+      <img src="{{ .photo }}" alt="{{ .name }}" class="member-photo"/>
+  
+      <div class="member-info">
+        <h4 class="member-name">{{ .name }}</h4>
+  
+        <!-- Education as a bullet list -->
+        {{ if .education }}
+          <p><strong>Education:</strong></p>
+          <ul class="member-edu-list">
+            {{ range .education }}
+              <li>
+                <strong>{{ .degree }}</strong> ({{ .period }}): {{ .detail }}
+              </li>
+            {{ end }}
+          </ul>
+        {{ end }}
+  
+        {{ with .research }}
+          <p><strong>Research interests:</strong> {{ . }}</p>
+        {{ end }}
+  
+        <p class="member-links">
+          {{ with .links.website }}
+            <a href="{{ . }}" target="_blank" rel="noopener">
+              <i class="fas fa-globe"></i>
+            </a>
+          {{ end }}
+          {{ with .links.linkedin }}
+            <a href="{{ . }}" target="_blank" rel="noopener">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          {{ end }}
+          {{ with .links.scholar }}
+            <a href="{{ . }}" target="_blank" rel="noopener">
+              <i class="fas fa-graduation-cap"></i>
+            </a>
+          {{ end }}
+        </p>
+      </div>
+    </div>
+  </div>
+  

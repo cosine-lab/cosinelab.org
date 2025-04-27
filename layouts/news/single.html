@@ -1,0 +1,68 @@
+{{ define "main" }}
+<article class="news-article">
+
+  <!-- 1) Title -->
+  <header class="news-header">
+    <h1>{{ .Title }}</h1>
+
+    <!-- 2) Meta: date, author, tags -->
+    <p class="news-meta">
+        <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="{{ .Date.Format "2006-01-02" }}">
+          {{ .Date.Format "Jan 2, 2006" }}
+        </time>
+      
+        {{ with .Params.author }}
+          &nbsp;|&nbsp;
+          <i class="fas fa-user" aria-hidden="true"></i>
+          {{ . }}
+        {{ end }}
+      
+        {{ with .Params.tags }}
+          &nbsp;|&nbsp;
+          <i class="fas fa-tags" aria-hidden="true"></i>
+          {{ range $i, $tag := . }}
+            {{ if $i }}, {{ end }}
+            <a href="{{ "/tags/" | relURL }}{{ $tag | urlize }}">{{ $tag }}</a>
+          {{ end }}
+        {{ end }}
+    </p>
+      
+  </header>
+
+  <!-- 3) Content -->
+  <div class="news-content">
+    {{ .Content }}
+  </div>
+
+<!-- ─── End of Content Divider ─── -->
+<hr class="content-divider" />
+
+<!-- 4) Share links -->
+<footer class="news-share">
+<span>Share this: </span>
+<a
+    href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{ .Permalink | urlquery }}&amp;title={{ .Title | urlquery }}"
+    target="_blank" aria-label="Share on LinkedIn"
+>
+    <i class="fab fa-linkedin"></i>
+</a>
+<a
+  href="https://x.com/intent/tweet?text={{ .Title | urlquery }}&amp;url={{ .Permalink | urlquery }}"
+  target="_blank"
+  rel="noopener"
+  aria-label="Share on X"
+>
+  <i class="fab fa-x"></i>
+</a>
+<a
+    href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink | urlquery }}"
+    target="_blank" aria-label="Share on Facebook"
+>
+    <i class="fab fa-facebook"></i>
+</a>
+</footer>
+  
+
+</article>
+{{ end }}

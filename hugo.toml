@@ -27,9 +27,9 @@ enableRobotsTXT = true
     "aboutcsu",                # ← “About CSU”
     "clustrmaps",              # ← “ClustrMaps”
     "contact",
-    "taglist",
-    "social",
-    "languages"
+    #"taglist",
+    #"social",
+    #"languages"
     ]
   twitter_cards = true
   readmore     = false

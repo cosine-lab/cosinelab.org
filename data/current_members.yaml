@@ -1,0 +1,52 @@
+pi:
+  - name: "Yinshuang Xiao"
+    photo: "/cosinelab.org/img/members/YX_profile_photo.png"
+    education:
+      - degree: "PhD"
+        period: "2019–2024"
+        detail: "Mechanical Engineering, The University of Texas at Austin"
+      - degree: "MS"
+        period: "2015–2018"
+        detail: "Mechanical Engineering, University of Electronic Science and Technology of China"
+      - degree: "BS"
+        period: "2010–2014"
+        detail: "Mechanical Engineering, University of Electronic Science and Technology of China"
+    research: "Multidimensional networks, AI-augmented design"
+    links:
+      website: "https://xiaoyinshuang.github.io/"
+      scholar: "https://scholar.google.com/citations?user=q6_uak0AAAAJ&hl=en&oi=ao"
+      linkedin: "https://www.linkedin.com/in/yinshuang-xiao-863933191/"
+
+# phd_students:
+#   - name: "Yinshuang Xiao"
+#     photo: "/cosinelab.org/img/members/YX_profile_photo.png"
+#     education:
+#       - degree: "PhD"
+#         period: "2019–2024"
+#         detail: "Mechanical Engineering, The University of Texas at Austin"
+#       - degree: "MS"
+#         period: "2015–2018"
+#         detail: "Mechanical Engineering, University of Electronic Science and Technology of China"
+#       - degree: "BS"
+#         period: "2010–2014"
+#         detail: "Mechanical Engineering, University of Electronic Science and Technology of China"
+#     research: "Multidimensional networks, AI-augmented design"
+#     links:
+#       website: "https://xiaoyinshuang.github.io/"
+#       scholar: "https://scholar.google.com/citations?user=q6_uak0AAAAJ&hl=en&oi=ao"
+#       linkedin: "https://www.linkedin.com/in/yinshuang-xiao-863933191/"
+
+# master_students:
+#   - name: "Bob Johnson"
+#     photo: "/img/members/bob_johnson.jpg"
+#     education: "B.S. in EE, Texas A&M"
+#     research: "Reinforcement learning for EV charging"
+#     links: {}
+
+# undergraduate_students:
+#   - name: "Carol Lee"
+#     photo: "/img/members/carol_lee.jpg"
+#     education: "Sophomore, ME, UT Austin"
+#     research: "Network science in urban planning"
+#     links:
+#       website: "https://carollee.example.com"

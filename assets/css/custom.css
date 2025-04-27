@@ -341,3 +341,112 @@ hr, .divider {
 #toTopBtn:hover {
   opacity: 1;
 }
+
+/* For news articles */
+.news-article {
+  margin: 2rem 0;
+}
+
+.news-header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.news-meta {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.news-content {
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.news-share {
+  border-top: 1px solid #ddd;
+  padding-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.news-share a {
+  color: #34363B;
+  text-decoration: none;
+  margin-right: 0.5rem;
+}
+
+.news-share a:hover {
+  text-decoration: underline;
+}
+
+/* a subtle horizontal rule */
+.content-divider {
+  border: none;
+  border-top: 1px solid #ddd;
+  width: 20%;
+  margin: 2rem 0 1rem;
+}
+
+/* style for the About DSE widget image */
+.widget-aboutdse-img {
+  display: block;
+  margin: 0 auto 0.5rem;  /* center + space below */
+  max-width: 100%;        /* never overflow the sidebar */
+  height: auto;
+  border-radius: 4px;     /* optional rounded corners */
+}
+
+
+
+/* ─── Member Card ──────────────────────────────── */
+
+/* make the inner container flex */
+.member-card-inner {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;              /* space between photo & info */
+}
+
+/* photo stays fixed size on the left */
+.member-photo {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;     /* or 50% if you want circular */
+  flex-shrink: 0;         /* prevents the photo from scaling down */
+}
+
+/* info takes remaining space */
+.member-info {
+  flex: 1;
+}
+
+/* tighten up margins if needed */
+.member-info .member-name {
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+  font-size: 1.1rem;
+}
+
+.member-info p {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+}
+
+.member-edu-list {
+  padding-left: 1.2rem;
+  margin: 0.5rem 0;
+  font-size: 0.8rem;
+  line-height: 1.3;
+}
+
+.member-edu-list li {
+  margin-bottom: 0.25rem;
+}
+
+/* draw a line above every member‐section except the first */
+.member-section:not(:first-of-type) {
+  border-top: 1px solid #34363B;
+  padding-top: 1.5rem;   /* space between the line and the heading */
+  margin-top: 1.5rem;    /* space between the previous section’s content and this line */
+}
