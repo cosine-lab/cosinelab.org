@@ -404,7 +404,7 @@ hr, .divider {
 .member-card-inner {
   display: flex;
   align-items: flex-start;
-  gap: 1rem;              /* space between photo & info */
+  gap: 0.9rem;              /* space between photo & info */
 }
 
 /* photo stays fixed size on the left */
@@ -424,18 +424,19 @@ hr, .divider {
 /* tighten up margins if needed */
 .member-info .member-name {
   margin-top: 0;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.1rem;
   font-size: 1.1rem;
 }
 
 .member-info p {
-  margin: 0.25rem 0;
   font-size: 0.9rem;
+  margin-top: 0.25rem;   /* Reduced spacing above paragraphs */
+  margin-bottom: 0.25rem; /* Reduced spacing below paragraphs */
 }
 
 .member-edu-list {
-  padding-left: 1.2rem;
-  margin: 0.5rem 0;
+  padding-left: 0.05rem;
+  margin: 0.25rem 0;
   font-size: 0.8rem;
   line-height: 1.3;
 }

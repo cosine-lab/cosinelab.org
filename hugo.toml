@@ -132,6 +132,11 @@ enableRobotsTXT = true
     url    = "/contact/"
     weight = 8
 
-[markup.goldmark]
-  [markup.goldmark.renderer]
-    unsafe = true  # Allows raw HTML tags like <hr>
+#[markup.goldmark]
+#  [markup.goldmark.renderer]
+#    unsafe = true  # Allows raw HTML tags like <hr>
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
