@@ -409,7 +409,7 @@ hr, .divider {
 
 /* For news articles */
 .news-article {
-  margin: 2rem 0;
+  margin: 0rem 0;
 }
 
 .news-header h1 {
@@ -461,7 +461,25 @@ hr, .divider {
   border-radius: 4px;     /* optional rounded corners */
 }
 
+/* Target the news list container */
+.news-list, 
+.news-container{
+  margin-left: 0rem !important;  /* Reduced from default (often 1.5rem+) */
+  padding-left: 0 !important;      /* Remove any inner padding */
+}
 
+/* Optional: Adjust spacing between news items 
+.news-item {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+} */
+
+/* Ensure titles and text align with the tighter margin */
+.news-item h2, 
+.news-item p {
+  margin-left: 0rem !important;
+  padding-left: 0 !important;
+}
 
 /* ─── Member Card ──────────────────────────────── */
 
