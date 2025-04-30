@@ -9,5 +9,5 @@ tags:
   - ""
 ---
 
-[Current Member](/cosinelab.org/about/current_member/)   
-[Lab Photos](/cosinelab.org/about/lab_photos/)
+[<span style="font-size: 1.6em;">Current Member</span>](/cosinelab.org/about/current_member/)   
+[<span style="font-size: 1.6em;">Lab Photos</span>](/cosinelab.org/about/lab_photos/)

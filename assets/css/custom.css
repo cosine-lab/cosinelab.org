@@ -181,14 +181,14 @@ margin-bottom: 0.5rem;
 .widget-calendar .cal-nav button {
 background: none;
 border: none;
-font-size: 1rem;
+font-size: 0.6rem;
 cursor: pointer;
 padding: 0.25rem;
 }
 
 .widget-calendar .cal-nav #cal-month-year {
 font-weight: bold;
-font-size: 0.9rem;
+font-size: 0.8rem;
 }
 
 /* ─── Calendar Grid ───────────────────────────────── */
@@ -197,7 +197,7 @@ display: grid;
 grid-template-columns: repeat(7, 1fr);
 gap: 2px;
 text-align: center;
-font-size: 0.85rem;
+font-size: 0.75rem;
 margin: 0.5rem 0;
 }
 
@@ -303,7 +303,7 @@ background: #dcdcdc !important;
 
 .news-meta {
   color: #666;
-  font-size: 0.9rem;
+  font-size: 1rem;
   margin-bottom: 1rem;
 }
 
@@ -359,6 +359,7 @@ hr, .divider {
   padding-bottom: 0.3rem !important;
   margin-bottom: 0.3rem !important;
   border-bottom: 1px solid #ddd !important;
+  font-size: 0.8rem !important;
 }
 
 .widget-news .news-title {
@@ -374,7 +375,7 @@ hr, .divider {
 
 /* 1) All sidebar widget titles to 1rem (16px) */
 .sidebar .widget h3 {
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 1.2;
   margin-bottom: 0.5rem;
 }
@@ -391,7 +392,7 @@ hr, .divider {
   padding: 0.5rem 0.75rem;
   border-radius: 4px;
   cursor: pointer;
-  font-size: 1.25rem;
+  font-size: 1rem;
   display: none;           /* hidden by default */
   box-shadow: 0 2px 6px rgba(0,0,0,0.3);
   transition: opacity 0.01s;
@@ -516,5 +517,37 @@ hr, .divider {
   margin-top: 1.5rem;    /* space between the previous section’s content and this line */
 }
 
+/* Mobile: Stack photo above text (flex column) */
+@media (max-width: 768px) {
+  .member-card-inner {
+    flex-direction: column; /* Vertical layout */
+    gap: 1rem; /* Reduce space between stacked items */
+  }
+  
+  /* Ensure photo takes full width on mobile */
+  .member-photo {
+    width: 100% !important;
+    height: auto !important; /* Maintain aspect ratio */
+    max-width: 250px; /* Limit photo width if needed */
+    margin: 0 auto; /* Center the photo */
+  }
+}
 
 
+
+/* 1. Set a fixed max-width for the main container */
+.container,
+.content-wrapper,
+.main-container {
+    max-width: 1300px !important; /* Adjust this to your preferred max width */
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 1.5rem !important; /* Fixed left margin */
+    padding-right: 1.5rem !important; /* Fixed right margin */
+    width: 100% !important;
+}
+
+
+.sidebar p {
+  font-size: 0.8rem !important; /* Adjust font size */
+}
