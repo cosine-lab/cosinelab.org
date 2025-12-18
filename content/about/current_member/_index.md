@@ -21,7 +21,7 @@ unsafe: true
         <li><strong>MS</strong> (2015–2018): Mechanical Engineering, University of Electronic Science and Technology of China</li>
         <li><strong>BS</strong> (2010–2014): Mechanical Engineering, University of Electronic Science and Technology of China</li>
       </ul>
-      <p><strong>Research interests:</strong> Complex system engieering and design, Network science, machine learning, data-driven engineering</p>
+      <p><strong>Research interests:</strong> Complex system engieering and design, network science, machine learning, data-driven engineering</p>
 
       <div class="member-links">
         <a href="https://xiaoyinshuang.github.io/" target="_blank" rel="noopener">
@@ -38,4 +38,37 @@ unsafe: true
   </div>
 </div>
 
+
 <hr class="member-section">
+
+<div class="member-card">
+<h3> PhD Student </h3>
+  <div class="member-card-inner">
+    <img src="/cosinelab.org/img/members/JQ_profile_photo.png" alt="Ji Qi" class="member-photo"/>
+    
+    <div class="member-info">
+      <h3>Ji Qi</h3>
+
+      <p><strong>Education:</strong></p>
+      <ul class="member-edu-list">
+        <li><strong>Ph.D.</strong> (2025–Present): Systems Engineering, Colorado State University</li>
+        <li><strong>MS</strong> (2020–2023): Management Science and Engineering, Tianjin University</li>
+        <li><strong>BS</strong> (2016–2020): Economic Statistics, Zhengzhou University</li>
+      </ul>
+      <p><strong>Research interests:</strong> AI and human interaction, user behavior modeling, network-based complex socio-technical modeling</p>
+
+      <div class="member-links">
+        <a href="https://wanxiangzhiji.github.io/Ji_Qi.github.io/" target="_blank" rel="noopener">
+          <i class="fas fa-globe"></i> Website
+        </a>
+        <a href="https://scholar.google.com/citations?view_op=list_works&hl=zh-CN&user=F4R_MnQAAAAJ" target="_blank" rel="noopener">
+          <i class="fas fa-graduation-cap"></i> Google Scholar
+        </a>
+        <a href="https://www.linkedin.com/in/ji-qi-115a151a6/" target="_blank" rel="noopener">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+

@@ -20,13 +20,12 @@ I welcome collaborations, student inquiries, and academic discussions. Reach me 
  
 <hr>
 
-#### 📍 Office  
-Coming Soon...  
-<!--
-Engineering Building  
+#### 📍 Office    
+
+A202B, Engineering Building  
 Colorado State University  
 6029 Campus Delivery, Fort Collins, CO 80523-6029  
--->
+
 
 
 <!--
