@@ -4,14 +4,18 @@ nav.menu .menu__sublist {
 }
 
 /* 2) allow overflow so the dropdown floats */
-nav.menu, nav.menu .menu__list {
-  position: relative!important;
+nav.menu {
   overflow: visible!important;
   z-index: 10!important;
 }
 
 /* 3) DESKTOP (>768px): hover/focus shows a floating submenu */
 @media (min-width: 768px) {
+  nav.menu .menu__list {
+    position: relative!important;
+    overflow: visible!important;
+    z-index: 10!important;
+  }
   nav.menu .menu__item--parent {
     position: relative!important;
   }
@@ -39,20 +43,6 @@ nav.menu, nav.menu .menu__list {
     box-shadow: none!important;
   }
   
-
-  /* 1) Collapse the menu list when *not* open */
-  nav.menu .menu__list {
-    max-height:   1!important;
-    overflow:     hidden !important;
-    transition:   max-height 0.3s ease !important;
-  }
-
-/* 2) When the nav has the “open” class, allow it to grow */
-  nav.menu.menu--open .menu__list {
-    max-height: 100vh !important; /* or whatever height you need */
-    overflow: visible !important;
-    opacity: 1 !important;
-  }
 
   /* ─── MAKE PARENT LINKS ROOMY FOR ARROW ─── */
   nav.menu .menu__item--parent > .menu__link {

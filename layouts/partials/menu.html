@@ -37,11 +37,13 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  // On mobile (<768px) clicks toggle the "expanded" class:
-  document.querySelectorAll('.menu__item--parent > .menu__link').forEach(link => {
-    link.addEventListener('click', function(e) {
+  // On mobile (<768px) only the arrow span toggles the submenu;
+  // clicking the link text itself navigates to the parent page.
+  document.querySelectorAll('.menu__item--parent > .menu__link > .menu__arrow').forEach(function(arrow) {
+    arrow.addEventListener('click', function(e) {
       if (window.innerWidth <= 767) {
         e.preventDefault();
+        e.stopPropagation();
         this.closest('.menu__item--parent').classList.toggle('menu__item--expanded');
       }
     });
@@ -50,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Clicking outside closes any open submenu on mobile
   document.addEventListener('click', function(e) {
     if (window.innerWidth <= 767 && !e.target.closest('.menu__item--parent')) {
-      document.querySelectorAll('.menu__item--parent').forEach(item => {
+      document.querySelectorAll('.menu__item--parent').forEach(function(item) {
         item.classList.remove('menu__item--expanded');
       });
     }

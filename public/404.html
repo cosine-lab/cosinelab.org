@@ -4,14 +4,14 @@
 	
 <link
   rel="stylesheet"
-  href="http://localhost:1313/cosinelab.org/css/custom.min.c45143809230c931d5fb3f91ce24e489dc3ff1f6d19e6f539ee832a081691175.css"
-  integrity="sha256-xFFDgJIwyTHV&#43;z&#43;RziTkidw/8fbRnm9TnugyoIFpEXU="
+  href="http://localhost:1313/cosinelab.org/css/custom.min.01b83d482761c7065c81b63c984751f766e081a8af3150e55f8c708623c53253.css"
+  integrity="sha256-Abg9SCdhxwZcgbY8mEdR92bggaivMVDlX4xwhiPFMlM="
   media="all"
 />
 <script
   defer
-  src="http://localhost:1313/cosinelab.org/js/menu.min.f8e7e73a7efbc570955aeae52ac0561e324ecb187f90f890c31701fe3afeccf7.js"
-  integrity="sha256-&#43;OfnOn77xXCVWurlKsBWHjJOyxh/kPiQwxcB/jr&#43;zPc="
+  src="http://localhost:1313/cosinelab.org/js/menu.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js"
+  integrity="sha256-47DEQpj8HBSa&#43;/TImW&#43;5JCeuQeRkm5NMpJWZG3hSuFU="
 ></script>
 
   
@@ -170,10 +170,12 @@
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   
-  document.querySelectorAll('.menu__item--parent > .menu__link').forEach(link => {
-    link.addEventListener('click', function(e) {
+  
+  document.querySelectorAll('.menu__item--parent > .menu__link > .menu__arrow').forEach(function(arrow) {
+    arrow.addEventListener('click', function(e) {
       if (window.innerWidth <= 767) {
         e.preventDefault();
+        e.stopPropagation();
         this.closest('.menu__item--parent').classList.toggle('menu__item--expanded');
       }
     });
@@ -182,7 +184,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
   document.addEventListener('click', function(e) {
     if (window.innerWidth <= 767 && !e.target.closest('.menu__item--parent')) {
-      document.querySelectorAll('.menu__item--parent').forEach(item => {
+      document.querySelectorAll('.menu__item--parent').forEach(function(item) {
         item.classList.remove('menu__item--expanded');
       });
     }
@@ -384,7 +386,7 @@ document.addEventListener('DOMContentLoaded', function() {
   <div class="widget widget-contact">
     <p>
       Email: <a href="mailto:yinshuang.xiao@colostate.edu">yinshuang.xiao@colostate.edu</a><br>
-      <a href="https://www.google.com/maps/place/Academic+Village+Engineering/@40.5713477,-105.0937904,17z/data=!3m1!4b1!4m6!3m5!1s0x87694a4e19306b31:0x1fd2fb7517869f2f!8m2!3d40.5713477!4d-105.0912155!16s%2Fg%2F11cn74z65x?entry=ttu&g_ep=EgoyMDI1MDQyMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">
+      <a href="https://www.google.com/maps/place/CSU+Engineering+Building/@40.5753465,-105.0842859,18.33z/data=!3m1!5s0x87694a5769319fb3:0x93ba42dea0a56180!4m14!1m7!3m6!1s0x87694a4e19306b31:0x1fd2fb7517869f2f!2sAcademic+Village+Engineering!8m2!3d40.5713477!4d-105.0912155!16s%2Fg%2F11cn74z65x!3m5!1s0x87694a57683c4987:0xc8096f0741c47e3a!8m2!3d40.575606!4d-105.083445!16s%2Fg%2F1tdyr8fm?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">
         A202B Engineering Building, 6029 Campus Delivery, Fort Collins, CO 80523-6029 
       </a>
     </p>
@@ -396,7 +398,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	<div class="container footer__container flex">
 	  
 	  <div class="footer__copyright">
-		&copy; 2025 COSINE Lab. All rights reserved. Last updated Dec 2025.
+		&copy; 2026 COSINE Lab. All rights reserved. Last updated May 2026.
 		
 	  </div>
 	  
