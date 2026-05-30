@@ -519,7 +519,7 @@ hr, .divider {
 }
 
 /* draw a line above every member‐section except the first */
-.member-section:not(:first-of-type) {
+div.member-section:not(:first-of-type) {
   border-top: 1px solid #34363B;
   padding-top: 1.5rem;   /* space between the line and the heading */
   margin-top: 1.5rem;    /* space between the previous section’s content and this line */

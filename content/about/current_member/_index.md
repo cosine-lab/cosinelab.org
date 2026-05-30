@@ -42,7 +42,7 @@ unsafe: true
 <hr class="member-section">
 
 <div class="member-card">
-<h3> PhD Student </h3>
+<h3> PhD Students </h3>
   <div class="member-card-inner">
     <img src="/cosinelab.org/img/members/JQ_profile_photo.png" alt="Ji Qi" class="member-photo"/>
     
@@ -96,5 +96,25 @@ unsafe: true
   </div>
 
 </div>
+
+<hr class="member-section">
+
+<div class="member-card">
+<h3> Undergraduate Students </h3>
+  <div class="member-card-inner">
+    <img src="/cosinelab.org/img/members/DJ_profile_photo.png" alt="Daniel Cruz" class="member-photo"/>
+    
+    <div class="member-info">
+      <h3>Daniel Cruz</h3>
+
+      <p><strong>Education:</strong></p>
+      <ul class="member-edu-list">
+        <li><strong>BS</strong> (2025–Present): Electrical and Computer Engineering, Colorado State University</li>
+      </ul>
+      <p><strong>Research interests:</strong> Customer behavior prediction, knowledge graph, network modeling</p>
+    </div>
+  </div>
+</div>
+
 
 
