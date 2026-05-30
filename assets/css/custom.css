@@ -559,3 +559,132 @@ div.member-section:not(:first-of-type) {
 .sidebar p {
   font-size: 0.8rem !important; /* Adjust font size */
 }
+
+/* ─── Publications Page ───────────────────────────── */
+.pub-tabs {
+  display: flex;
+  gap: 0;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #33363b;
+}
+
+.pub-tab {
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  padding: 0.5rem 1.25rem;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-family: "Roboto", sans-serif;
+  color: #33363b;
+  margin-bottom: -2px;
+  transition: color 0.2s;
+}
+
+.pub-tab.active {
+  border-bottom: 3px solid #E76C57;
+  font-weight: bold;
+  color: #E76C57;
+}
+
+.pub-tab:hover {
+  color: #E76C57;
+}
+
+.pub-section h3 {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.25rem;
+  margin-top: 1.75rem;
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+}
+
+.pub-list {
+  list-style: none !important;
+  counter-reset: pub-counter;
+  padding-left: 2.5rem !important;
+  margin: 0 !important;
+}
+
+.pub-list .pub-item {
+  counter-increment: pub-counter;
+  list-style: none !important;
+  position: relative;
+  margin-bottom: 0.9rem;
+  padding-bottom: 0.9rem;
+  border-bottom: 1px solid #eee;
+}
+
+.pub-list .pub-item:last-child {
+  border-bottom: none;
+}
+
+.pub-list .pub-item::before {
+  content: "[" counter(pub-counter) "]";
+  position: absolute;
+  left: -2.5rem;
+  color: #555;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  width: 2.3rem;
+  text-align: left;
+}
+
+.pub-citation {
+  margin-bottom: 0.3rem;
+  line-height: 1.55;
+  font-size: 0.88rem;
+}
+
+.pub-links {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  margin-top: 0.3rem;
+}
+
+.pub-link {
+  display: inline-block;
+  padding: 0.1rem 0.55rem;
+  color: white !important;
+  text-decoration: none !important;
+  border-radius: 3px;
+  font-size: 0.72rem;
+  font-weight: bold;
+  letter-spacing: 0.03em;
+}
+
+.pub-link.pdf  { background: #1E4d2b; }
+.pub-link.doi  { background: #c8c372; }
+.pub-link.code { background: #59595b; }
+
+.pub-link:hover { opacity: 0.82; }
+
+.pub-award {
+  display: inline-block;
+  background: #E76C57;
+  color: white;
+  font-size: 0.68rem;
+  padding: 0.1rem 0.4rem;
+  border-radius: 3px;
+  font-weight: bold;
+  vertical-align: middle;
+  margin-left: 0.3rem;
+}
+
+.pub-status {
+  color: #888;
+  font-style: italic;
+  font-size: 0.85em;
+}
+
+.pub-badge {
+  display: inline-block;
+  background: #5d6d7e;
+  color: white;
+  font-size: 0.65rem;
+  padding: 0.1rem 0.4rem;
+  border-radius: 3px;
+  vertical-align: middle;
+  margin-left: 0.3rem;
+}
