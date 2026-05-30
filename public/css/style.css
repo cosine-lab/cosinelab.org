@@ -153,7 +153,7 @@ body {
 	font-size: .875rem;
 	line-height: 1.6;
 	word-wrap: break-word;
-	background: #dcdcdc; 
+	background: #F0F4F6;
 	-webkit-font-smoothing: antialiased;
 	/* Stick footer to bottom */
 	display: flex;
@@ -499,8 +499,6 @@ select {
 
 .logo__img {
 	max-height: 256px;
-	width: 287px;      /* Maintain aspect ratio */
-    height: 100px;    /* Set a fixed height or use max-height */
 }
 
 .logo__text {
@@ -512,8 +510,8 @@ select {
 }
 
 .logo--mixed .logo__img {
-	max-width: 287px;
-	max-height: 287px;
+	max-width: 128px;
+	max-height: 128px;
 }
 
 .logo--mixed .logo__text {
@@ -608,7 +606,6 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 	list-style: none;
 }
 
-
 .menu__item {
 	padding: 0 .9375rem 0 2rem;
 }
@@ -679,7 +676,6 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 .menu__list--transition {
 	transition: visibility .15s ease, transform .15s ease, -webkit-transform .15s ease;
 }
-
 
 @media screen and (min-width: 767px) {
 

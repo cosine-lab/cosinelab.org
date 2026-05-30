@@ -70,5 +70,31 @@ unsafe: true
       </div>
     </div>
   </div>
+
+  <div style="margin: 1.5rem 0;"></div>
+
+  <div class="member-card-inner">
+    <img src="/cosinelab.org/img/members/Jill_profile_photo.png" alt="Jill Arada" class="member-photo"/>
+    
+    <div class="member-info">
+      <h3>Jill Arada</h3>
+
+      <p><strong>Education:</strong></p>
+      <ul class="member-edu-list">
+        <li><strong>Ph.D.</strong> (2025–Present): Systems Engineering, Colorado State University</li>
+        <li><strong>MS</strong> (2020): Mechanical Engineering, University of Minnesota – Twin Cities</li>
+        <li><strong>BS</strong> (2018): Biomedical Engineering, Indiana Tech</li>
+      </ul>
+      <p><strong>Research interests:</strong> Systems engineering, model-based systems engineering (MBSE), digital engineering, architecture modeling, SysML, UAF</p>
+
+      <div class="member-links">
+        <a href="https://www.linkedin.com/in/jillannarada/" target="_blank" rel="noopener">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+      </div>
+    </div>
+  </div>
+
 </div>
+
 
