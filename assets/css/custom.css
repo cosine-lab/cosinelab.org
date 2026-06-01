@@ -688,3 +688,99 @@ div.member-section:not(:first-of-type) {
   vertical-align: middle;
   margin-left: 0.3rem;
 }
+
+/* ─── Teaching Page ───────────────────────────── */
+.course-card {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #ccc;
+}
+.course-card:last-of-type {
+  border-bottom: none;
+}
+
+.course-header {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
+
+.course-title {
+  font-size: 1.05rem;
+  font-weight: bold;
+  margin: 0;
+  color: #33363b;
+}
+
+.course-ext-link {
+  display: inline-block;
+  font-size: 0.72rem;
+  padding: 0.1rem 0.55rem;
+  background: #1E4d2b;
+  color: white !important;
+  text-decoration: none !important;
+  border-radius: 3px;
+  font-weight: bold;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+}
+.course-ext-link:hover { opacity: 0.8; }
+
+.course-desc {
+  font-size: 0.9rem;
+  color: #444;
+  margin-bottom: 1rem;
+  line-height: 1.55;
+}
+
+.materials-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+  margin-bottom: 1rem;
+}
+.materials-table th {
+  text-align: left;
+  padding: 0.4rem 0.75rem;
+  background: #f0f0f0;
+  border-bottom: 2px solid #33363b;
+  font-weight: bold;
+  color: #33363b;
+}
+.materials-table td {
+  padding: 0.45rem 0.75rem;
+  border-bottom: 1px solid #eee;
+  vertical-align: middle;
+}
+.materials-table tr:last-child td {
+  border-bottom: none;
+}
+.materials-table .semester-col {
+  font-weight: 600;
+  white-space: nowrap;
+  min-width: 110px;
+}
+.materials-table .links-col {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.course-gallery {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px dashed #ccc;
+}
+.course-gallery h4 {
+  font-size: 0.95rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #33363b;
+}
+.gallery-placeholder {
+  color: #999;
+  font-size: 0.85rem;
+  font-style: italic;
+}
