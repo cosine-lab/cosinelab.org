@@ -21,11 +21,12 @@ enableRobotsTXT = true
   widgets      = [
     "search", 
     "news", 
-    "callforapplication",      # ← “Call for Application”
+    "callforparticipants",    
+    "callforapplication",      
     "calendar",
-    "aboutdse",                # ← “About Dept of System Engineering”
-    "aboutcsu",                # ← “About CSU”
-    "clustrmaps",              # ← “ClustrMaps”
+    "aboutdse",                
+    "aboutcsu",                
+    "clustrmaps",              
     "contact",
     #"taglist",
     #"social",
