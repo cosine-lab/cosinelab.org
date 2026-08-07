@@ -110,14 +110,14 @@ function showPubTab(tab, btn) {
       <li class="pub-item">
         <p class="pub-citation">J. Qi, <strong>Y. Xiao</strong>, "An AI-Based Framework for Behavioral Residential Load Modeling and Distribution Feeder Analysis," <em>ASME 2026 IDETC-CIE</em>, Houston, TX, Aug 2026. <span class="pub-status">Accepted</span></p>
         <div class="pub-links">
-          <!-- <a href="/cosinelab.org/papers/FILENAME.pdf" class="pub-link pdf" target="_blank">PDF</a> -->
+          <a href="/cosinelab.org/papers/Qi_2026_PowerGridAIAnalysis_conference.pdf" class="pub-link pdf" target="_blank">PDF</a>
         </div>
       </li>
 
       <li class="pub-item">
         <p class="pub-citation">S. Thakrar, Z. Sha, <strong>Y. Xiao</strong>, "Comparing Network Representations of U.S. Vehicle Customer Preferences: A Case Study of EV Consideration and Adoption," <em>ASME 2026 IDETC-CIE</em>, Houston, TX, Aug 2026. <span class="pub-status">Accepted</span></p>
         <div class="pub-links">
-          <!-- <a href="/cosinelab.org/papers/FILENAME.pdf" class="pub-link pdf" target="_blank">PDF</a> -->
+          <a href="/cosinelab.org/papers/Thakrar_2026_VehicleNetworkRepresentationComparison_conference.pdf" class="pub-link pdf" target="_blank">PDF</a>
         </div>
       </li>
 
@@ -300,12 +300,16 @@ function showPubTab(tab, btn) {
 
       <li class="pub-item">
         <p class="pub-citation">J. Qi, <strong>Y. Xiao</strong>, "An AI-Based Framework for Behavioral Residential Load Modeling and Distribution Feeder Analysis," <em>ASME 2026 IDETC-CIE</em>, Houston, TX, Aug 2026. <span class="pub-status">Accepted</span> <span class="pub-badge">Conference</span></p>
-        <div class="pub-links"></div>
+        <div class="pub-links">
+        <a href="/cosinelab.org/papers/Qi_2026_PowerGridAIAnalysis_conference.pdf" class="pub-link pdf" target="_blank">PDF</a>
+        </div>
       </li>
 
       <li class="pub-item">
         <p class="pub-citation">S. Thakrar, Z. Sha, <strong>Y. Xiao</strong>, "Comparing Network Representations of U.S. Vehicle Customer Preferences: A Case Study of EV Consideration and Adoption," <em>ASME 2026 IDETC-CIE</em>, Houston, TX, Aug 2026. <span class="pub-status">Accepted</span> <span class="pub-badge">Conference</span></p>
-        <div class="pub-links"></div>
+        <div class="pub-links">
+        <a href="/cosinelab.org/papers/Thakrar_2026_VehicleNetworkRepresentationComparison_conference.pdf" class="pub-link pdf" target="_blank">PDF</a>
+        </div>
       </li>
 
       <li class="pub-item">
