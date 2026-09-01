@@ -21,7 +21,7 @@ unsafe: true
         <li><strong>MS</strong> (2015–2018): Mechanical Engineering, University of Electronic Science and Technology of China</li>
         <li><strong>BS</strong> (2010–2014): Mechanical Engineering, University of Electronic Science and Technology of China</li>
       </ul>
-      <p><strong>Research interests:</strong> Complex system engieering and design, network science, machine learning, data-driven engineering</p>
+      <p><strong>Research interests:</strong> Complex system engineering and design, network science, machine learning, data-driven engineering</p>
 
       <div class="member-links">
         <a href="https://xiaoyinshuang.github.io/" target="_blank" rel="noopener">
